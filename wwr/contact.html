@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;700&family=Open+Sans:wght@200;700&display=swap" rel="stylesheet">
+    <title>Wild Rafting</title>
+    <meta name="about" content="From our beginnings until now, we have guided thousands of people on exciting descents, learn about our history and join the next expedition!">
+    <meta name="author" content="Jernigam Gonzalez">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+      <img src="images/raftingcompas.jpg" alt="Wild Rafting Logo" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+
+        <!-- Employees section -->
+        <div class="employee-section">
+            <div class="employee">
+                <img src="images/Employee1.jpg" alt="Ethan Miller">
+                <div class="employee-info">
+                    <h3>Ashley Johnson</h3>
+                    <p>Operations Manager</p>
+                </div>
+            </div>
+            <div class="employee">
+                <img src="images/Employee2.jpg" alt="Emily Carter">
+                <div class="employee-info">
+                    <h3>Emily Carter</h3>
+                    <p>Sales and Marketing Specialist</p>
+                </div>
+            </div>
+            <div class="employee">
+                <img src="images/Employee3.jpg" alt="Ashley Johnson">
+                <div class="employee-info">
+                    <h3>Ethan Miller</h3>
+                    <p>Logistics and Reservations Coordinator</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main container for the form and the contact information -->
+        <div class="contact-section">
+            <div class="contact-container">
+                <!-- Form on the left side -->
+                <div class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <form action="submit_form.php" method="post">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Purpose of Message:</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+                                <label><input type="radio" name="purpose" value="booking"> Booking Question</label>
+                                <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label><input type="checkbox" name="subscribe" value="yes"> Subscribe me to the monthly newsletter</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+    
+                <!-- Contact information on the right side -->
+                <div class="contact-info">
+                    <h2 class="contact-info-title">Contact Information</h2>
+                    <p>Wild Rafting</p>
+                    <p>⚑ Address: 123 Main Street, Aspen, CO 81611, United States</p>
+                    <p>☎ Phone: 999-999-9999</p>
+                    <p>✉ Email: <a href="mailto:wildrifting@gmail.com">wildrifting@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3092.2664640178928!2d-106.82624352364407!3d39.19139362930314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8740397c7f485583%3A0x650a6863903391bb!2s123%20W%20Main%20St%2C%20Aspen%2C%20CO%2081611%2C%20EE.%20UU.!5e0!3m2!1ses!2sve!4v1738862209057!5m2!1ses!2sve" width="800" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    </main>
+ 
+    <footer>
+      <div class="copyright">
+        <p>©2025 ⚓ Wild Rafting ⚓ Jernigam Gonzalez ⚓ <a href="https://app.moqups.com/wxMVo5z1OyyVPZJNwlu9HMoHkq4q4I7W/view/page/ad64222d5" target="_blank">Wireframe</a></p>
+      </div>
+      <div class="social-links">
+        <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter"></a>
+        <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
+      </div>
+    </footer>
+</body>
+</html>
