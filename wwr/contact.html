@@ -58,31 +58,31 @@
                     <h2>Send Us a Message</h2>
                     <form action="submit_form.php" method="post">
                         <div class="form-group">
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" required>
+                            <label for="contact-name">Name:</label>
+                            <input type="text" id="contact-name" name="name" required>
                         </div>
                         
                         <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
+                            <label for="contact-email">Email:</label>
+                            <input type="email" id="contact-email" name="email" required>
                         </div>
                         
                         <div class="form-group">
                             <label>Purpose of Message:</label>
                             <div class="radio-group">
-                                <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
-                                <label><input type="radio" name="purpose" value="booking"> Booking Question</label>
-                                <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                                <label for="purpose-general"><input type="radio" id="purpose-general" name="purpose" value="general" required> General Inquiry</label>
+                                <label for="purpose-booking"><input type="radio" id="purpose-booking" name="purpose" value="booking"> Booking Question</label>
+                                <label for="purpose-suggestion"><input type="radio" id="purpose-suggestion" name="purpose" value="suggestion"> Website Suggestion</label>
                             </div>
                         </div>
                         
                         <div class="form-group">
-                            <label for="message">Message:</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="contact-message">Message:</label>
+                            <textarea id="contact-message" name="message" rows="5" required></textarea>
                         </div>
                         
                         <div class="form-group">
-                            <label><input type="checkbox" name="subscribe" value="yes"> Subscribe me to the monthly newsletter</label>
+                            <label for="newsletter-subscribe"><input type="checkbox" id="newsletter-subscribe" name="subscribe" value="yes"> Subscribe me to the monthly newsletter</label>
                         </div>
                         
                         <div class="form-group">
