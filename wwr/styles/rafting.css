@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #476278;
+  --primary-color: #314555;
   --secondary-color: #F2DA88;
   --accent1-color: #454346;
   --accent2-color: #dfff29;
@@ -676,5 +676,236 @@ footer a:hover {
   .hero article {
       width: 90%;
       padding: 1rem;
+  }
+}
+
+/* Hero Section Styles */
+.hero3 {
+  position: relative;
+  height: 80vh;
+  min-height: 600px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.hero-content3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 90%;
+}
+
+.hero-content3 h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+.hero-content3 h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Welcome Section */
+.welcome-section {
+  max-width: 800px;
+  margin: 4rem auto;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.welcome-section h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.welcome-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Featured Trips Section */
+.featured-trips {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+}
+
+.featured-trips h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: var(--primary-color);
+}
+
+.trips-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.trip-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.trip-card:hover {
+  transform: translateY(-10px);
+}
+
+.trip-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.trip-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.trip-info h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.trip-info p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Dedication Section */
+.dedication-section {
+  max-width: 800px;
+  margin: 4rem auto;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.dedication-section h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.dedication-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Container para las dos secciones */
+.info-newsletter-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  align-items: start;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 2rem 1rem; /* Reducido de 4rem 2rem */
+  text-align: center;
+  max-width: 800px; /* Añadido para contener el ancho máximo */
+  margin: 0 auto; /* Centrar la sección */
+  border-radius: 8px; /* Añadir bordes redondeados */
+}
+
+.newsletter-section h2 {
+  color: white;
+  text-align: center;
+  font-size: 1.75rem; /* Reducido de 2rem */
+  margin-bottom: 1.5rem; /* Añadido espacio después del título */
+}
+
+.signup-form2 {
+  max-width: 400px; /* Reducido de 500px */
+  margin: 1rem auto; /* Reducido de 2rem */
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem; /* Espacio entre elementos usando gap */
+}
+
+.form-group2 {
+  margin-bottom: 0; /* Eliminado el margen ya que usamos gap */
+}
+
+.signup-form2 input,
+.signup-form2 select {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* CTA Section */
+.cta-section2 {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+}
+
+.cta-section2 h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.cta-button2 {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button2:hover {
+  background-color: var(--accent1-color);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .trips-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+  }
+
+  .hero-content3 h1 {
+      font-size: 1.2rem;
+  }
+
+  .hero-content3 h2 {
+      font-size: 3rem;
   }
 }
